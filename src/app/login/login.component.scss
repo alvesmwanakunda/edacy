@@ -1,0 +1,29 @@
+.blog{
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+  margin-left: 16px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+
+.btnSave{
+  width: 100%;
+  height: 52px;
+  background: #63BFAD;
+}
+
+.file-input {
+  display: none;
+}

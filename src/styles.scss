@@ -1,0 +1,352 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: Whyte;
+  src: url(assets/ABCWhyte-Regular-Trial.woff);
+}
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+html, body { height: 100%; }
+body { margin: 0; font-family:Whyte,sans-serif; }
+
+.titleh{
+  user-select: none;
+  font-family:Whyte,sans-serif;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-bottom: 10px !important;
+  color: var(--color-text, #000);
+  padding-top: 10px;
+}
+
+.sTitle{
+
+  user-select: none;
+  font-family:Whyte,sans-serif;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-bottom: 35px !important;
+  color: var(--color-text, #000);
+}
+
+.borderNone{
+  border-radius: 0 !important;
+}
+
+
+
+.btnGoogle{
+  color: var(--color-text, #000) !important;
+  border: 3px solid var(--color-border-strong, #000) !important;
+  border-radius: 8px !important;
+  background-color: var(--color-bg, #ffffff) !important;
+  font-size: 16px !important;
+  font-family: Whyte,sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.btnGoogleLog{
+  color: var(--color-text, #ffffff) !important;
+  border: 3px solid var(--color-border-strong, #000) !important;
+  border-radius: 8px !important;
+  background-color: var(--color-bg, #000) !important;
+  font-size: 16px !important;
+  font-family: Whyte,sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.sizeBtn{
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 48px;
+  width: 100%;
+}
+
+.matcontent{
+  padding: 36px;
+}
+
+.imgGoogle{
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+.spanOr{
+  display: block;
+  height: 60px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 60px;
+  color: var(--color-text-secondary, #666);
+  text-align: center;
+  font-family: Whyte,sans-serif !important;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+
+
+.inputForm{
+  height: 50px !important;
+  border: 3px solid var(--color-border-strong, #000) !important;
+  border-radius: 5px !important;
+}
+
+.spaceBtn{
+  margin-bottom: 20px;
+}
+
+.footerForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.linkSign{
+  color: var(--color-text-brand, #5551ff);
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Whyte,sans-serif !important;
+  text-decoration: none;
+}
+
+.linkSignUp{
+  color: var(--color-text-secondary, rgba(0, 0, 0, .6));
+  font-size: 16px;
+  font-family: Whyte,sans-serif !important;
+}
+
+// content
+
+.page-wrapper {
+  transition: 250ms;
+}
+
+// Header Bar
+
+.headerBar{
+  background: #FFCC00 !important;
+  border-bottom: 1px solid #e5e2e2;
+  //height: 60px;
+}
+
+.headTitle{
+  color: #061020 !important;
+  font-weight: 600;
+}
+
+.avatar{
+  height: 30px;
+  width: 30px;
+  background-color: #061006;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  bottom: 6px;
+}
+
+.textAvatar{
+  color: #fff;
+  position: relative;
+  left: 9px;
+  top: 5px;
+}
+
+//card photo and videao
+
+.cardPicture{
+  box-sizing: border-box;
+  border: 1px dashed #717171;
+  border-radius: 11px;
+  height: 120px;
+}
+
+.contentPicture{
+  text-align: center;
+  padding: 13px;
+  font-size: 12px;
+  color: #061020;
+  cursor: pointer;
+}
+
+.iconPicture{
+  font-size: 27px;
+  color:#63BFAD
+}
+
+// Nav bar
+
+.title-menu{
+  padding: 6px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.vertical-menu a:hover {
+  color: #FFCC00 !important;
+  cursor: pointer;
+}
+
+.vertical-menu a.active i  {
+  color: #FFCC00 !important;
+}
+
+.vertical-menu a.active {
+  background-color: #ffcc0030;
+  border-radius: 4px;
+  color: #061020 !important;
+  margin: 10px;
+  height: 45px;
+}
+
+.ko-page-content {
+  padding: 25px;
+
+  &.with-sidebar {
+    padding: 35px 28px 0 100px;
+    .pdn-tb-sm {
+      //transition: 150ms;
+    }
+    .vertical-menu {
+      width: 74px;
+      overflow-y: auto;
+      padding-top: 19px;
+      position: relative;
+      right: 12px;
+      text-align: center;
+    }
+    .vertical-menu a {
+      color: #000;
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      font-size: 11px;
+      padding-bottom: 23px;
+      padding-top: 15px;
+    }
+
+  }
+
+  &.with-fullsidebar {
+    padding: 0 0 0 46px;
+
+    .pdn-tb-sm {
+      padding: 10px 0 0 136px;
+      //transition: 150ms;
+    }
+    .vertical-menu {
+      width: 179px;
+      overflow-y: auto;
+      padding-top: 19px;
+      position: relative;
+      right: 12px !important;
+    }
+    .vertical-menu a {
+      color: #000;
+      display: block;
+      padding: 28px;
+      text-decoration: none;
+      font-size: 11px;
+      padding-bottom: 23px;
+      padding-top: 15px;
+    }
+  }
+
+  .ko-sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+
+    .side-header {
+      margin-bottom: 25px;
+    }
+
+    .side-menu {
+      padding: 0;
+
+      li {
+        a {
+          display: block;
+          font-weight: 400;
+          font-size: 14px;
+          padding: 5px 0;
+          color: #656464;
+          cursor: pointer;
+
+          &:hover,
+          &:focus {
+            color: #69f3a3;
+            text-decoration: none;
+          }
+        }
+
+        &.active a {
+          color: #69f3a3;
+        }
+
+        ul {
+          li {
+            a {
+              display: block;
+              font-weight: 400;
+              font-size: 14px;
+              padding: 5px 0;
+              color: #656464;
+              cursor: pointer;
+
+              &:hover,
+              &:focus {
+                color: #69f3a3;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .channels-menu {
+      padding: 0;
+
+      li {
+        a {
+          display: block;
+          font-weight: 400;
+          font-size: 14px;
+          padding: 5px 0;
+          color: #858d98;
+
+          &:hover,
+          &:focus {
+            color: #000;
+          }
+        }
+
+        &.active a {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.aSize{
+  font-size: 13px !important;
+  color: #061006 !important;
+}
+
+.iconSize{
+  font-size: 16px;
+}
+
+
+
+

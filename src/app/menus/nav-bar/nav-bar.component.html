@@ -1,0 +1,47 @@
+<app-header-bar></app-header-bar>
+<div [ngClass]="[!isMenuSize ? 'ko-page-content with-sidebar' : 'ko-page-content with-fullsidebar']">
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="ko-sidebar" [ngStyle]="{ width: !isMenuSize ? '75px' : '180px' }"   style="box-shadow: 1px 1px 5px #e3e0e0">
+        <div class="sidebar-content">
+          <div class="side-menu" style="display: inline-block; list-style-type: none">
+
+            <div class="vertical-menu">
+
+              <div style="padding-top: 90px;">
+                <a routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/home']" class="aSize"><i class="bi bi-house-door-fill iconSize"></i> <span class="title-menu" *ngIf="isMenuSize">Overview</span></a>
+                <a class="aSize"><i class="bi bi-briefcase-fill iconSize"></i> <span class="title-menu" *ngIf="isMenuSize">Customize</span></a>
+                <a class="aSize"><i class="bi bi-grid iconSize"></i> <span class="title-menu" *ngIf="isMenuSize">Integrations</span></a>
+                <a class="aSize"><i class="bi bi-receipt iconSize"></i> <span class="title-menu" *ngIf="isMenuSize">Billing</span></a>
+                <a class="aSize"><i class="bi bi-currency-dollar iconSize"></i> <span class="title-menu" *ngIf="isMenuSize">Payments</span></a>
+                <a class="aSize"><i class="bi bi-question-square-fill iconSize"></i> <span class="title-menu" *ngIf="isMenuSize">Help</span></a>
+                <a class="aSize"><i class="bi bi-shop-window iconSize"></i> <span class="title-menu" *ngIf="isMenuSize">Marketplace</span></a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <!--sliderLayout-->
+
+<div class="page-wrapper">
+  <div class="pdn-tb-sm">
+    <ng-content></ng-content>
+  </div>
+</div>
+
+<div style="position: fixed;top: 80px;left: 160px;"  *ngIf="isMenuSize">
+  <button mat-mini-fab style="background-color: #63BFAD;" (click)="openMenu()">
+    <i class="bi bi-chevron-left" style="font-size: 25px; color: #fff; position: absolute; left: 6px; top: 8px;"></i>
+  </button>
+</div>
+
+<div  style="position: fixed;top: 80px;left: 55px;" *ngIf="!isMenuSize">
+  <button mat-mini-fab style="background-color: #63BFAD;"  (click)="openMenu()">
+    <i class="bi bi-chevron-right" style="font-size: 25px; color: #fff; position: absolute; left: 9px; top: 8px;"></i>
+  </button>
+</div>
+</div>

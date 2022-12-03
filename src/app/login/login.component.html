@@ -1,0 +1,170 @@
+
+<app-nav-bar>
+
+
+<div class="container">
+
+
+  <div class="blog">
+    <div class="row justify-content-md-center">
+
+       <div class="col-log-6 col-md-6 col-md-auto">
+
+        <mat-card class="borderNone">
+          <mat-card-content>
+
+            <div class="titleh">Create program</div>
+            <div class="sTitle">Overview</div>
+
+            <form>
+
+               <div>
+                <p>Progam Title</p>
+                <mat-form-field appearance="outline" class="example-full-width">
+                  <input matInput placeholder="Ex. Front-end development 101">
+                </mat-form-field>
+               </div>
+
+               <div>
+                <p>Progam Language</p>
+                <mat-form-field appearance="outline" class="example-full-width">
+                  <mat-select >
+                    <mat-option value="English">English</mat-option>
+                    <mat-option value="French">French</mat-option>
+                  </mat-select>
+                </mat-form-field>
+               </div>
+
+               <div>
+                <p>Progam Level</p>
+                  <mat-radio-group aria-label="Select an option" class="example-section">
+                    <mat-radio-button value="Beginner" class="example-margin">Beginner</mat-radio-button>
+                    <mat-radio-button value="Itermediate"  class="example-margin">Itermediate</mat-radio-button>
+                    <mat-radio-button value="Advanced"  class="example-margin">Advanced</mat-radio-button>
+                  </mat-radio-group>
+               </div>
+
+               <div>
+                <p>Progam Type</p>
+                  <mat-radio-group aria-label="Select an option" class="example-section">
+                    <mat-radio-button value="Foundation" class="example-margin">Foundation</mat-radio-button>
+                    <mat-radio-button value="Specialization"  class="example-margin">Specialization</mat-radio-button>
+                  </mat-radio-group>
+               </div>
+
+               <div class="sTitle">Details</div>
+
+               <div>
+                <p>Progam Description</p>
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <textarea matInput placeholder="Type your description here..."></textarea>
+                  </mat-form-field>
+               </div>
+
+               <div>
+                <p>Learning Objectives</p>
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <textarea matInput placeholder="Type what students will learn here..."></textarea>
+                  </mat-form-field>
+               </div>
+
+               <div class="row">
+                  <div class="col-md-6">
+
+                    <p>Duration (weeks)</p>
+                    <mat-form-field appearance="outline" class="example-full-width">
+                      <input matInput type="number">
+                    </mat-form-field>
+
+                  </div><!--col-->
+                  <div class="col-md-6">
+
+                    <p>Hours per weeks</p>
+                    <mat-form-field appearance="outline" class="example-full-width">
+                      <input matInput type="number">
+                    </mat-form-field>
+
+                  </div><!--col-->
+               </div><!--row-->
+
+               <div>
+                <p>Prerequisite</p>
+                <mat-form-field appearance="outline" class="example-full-width">
+                  <input matInput placeholder="Ex. Knowledge of AngularJS">
+                </mat-form-field>
+               </div>
+
+               <div class="row">
+                <div class="col-md-6">
+
+                  <p>Type of Certification</p>
+                  <mat-form-field appearance="outline" class="example-full-width">
+                    <input matInput>
+                  </mat-form-field>
+
+                </div><!--col-->
+                <div class="col-md-6">
+
+                  <p>Start Date</p>
+                  <mat-form-field appearance="outline" class="example-full-width">
+                    <input matInput type="date">
+                    <mat-icon matSuffix>calendar_today</mat-icon>
+                  </mat-form-field>
+
+                </div><!--col-->
+               </div><!--row-->
+
+             <div class="sTitle">Details</div>
+
+             <div class="row" style="margin-bottom: 35px;">
+              <div class="col-md-6">
+
+                <p style="font-size:10px;">Program Cover Image (Optional)</p>
+                <div class="cardPicture">
+                  <input type="file" class="file-input" accept='image/jpeg, image/png, image/ico' (change)="onFileSelected($event)" #fileUpload>
+                  <div class="contentPicture" (click)="fileUpload.click()">
+                    <p><i class="bi bi-cloud-arrow-up-fill iconPicture"></i></p>
+                    <p>Format: jpg, png, ico</p>
+                    <p>Max size: 100 KB</p>
+                  </div>
+
+                </div>
+
+              </div><!--col-->
+              <div class="col-md-6">
+
+                <p style="font-size:10px;">Video Thumbnail (Optional)</p>
+                <div class="cardPicture">
+                  <input type="file" class="file-input" accept='video/mp4,video/mov' (change)="onFileSelectedMovie($event)" #movieUpload>
+                  <div class="contentPicture" (click)="movieUpload.click()">
+                    <p><i class="bi bi-cloud-arrow-up-fill iconPicture"></i></p>
+                    <p>Format: mp4, mov</p>
+                    <p>Max size: 100 KB</p>
+                  </div>
+                </div>
+
+              </div><!--col-->
+             </div><!--row-->
+
+             <div>
+              <button mat-raised-button class="btnSave">CREATE PROGRAM</button>
+             </div>
+
+            </form>
+
+          </mat-card-content>
+        </mat-card>
+
+
+       </div><!--col-->
+
+    </div><!--row-->
+
+  </div><!--div blog-->
+
+</div><!--container-->
+
+</app-nav-bar>
+
+
+
